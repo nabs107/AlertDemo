@@ -1,24 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlertDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNx-QU-8tG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alerts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpm-Ht-Gve">
+                                        <rect key="frame" x="168.5" y="128.5" width="77" height="43"/>
+                                        <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.49411764705882355" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Lpm-Ht-Gve" firstAttribute="centerY" secondItem="rNx-QU-8tG" secondAttribute="centerY" id="PlD-uN-wcq"/>
+                                    <constraint firstItem="Lpm-Ht-Gve" firstAttribute="centerX" secondItem="rNx-QU-8tG" secondAttribute="centerX" id="h6O-Mq-hUc"/>
+                                    <constraint firstAttribute="height" constant="300" id="xnF-l2-we7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbL-O9-rXO">
+                                <rect key="frame" x="0.0" y="300" width="414" height="596"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b9-2y-1cH">
+                                        <rect key="frame" x="132" y="275.5" width="150" height="45"/>
+                                        <color key="backgroundColor" red="0.9882352941176471" green="0.12156862745098039" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="NFc-Vc-Av4"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="pWm-Yl-iX4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Show Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1v0-zX-aOu">
+                                        <rect key="frame" x="132" y="336.5" width="150" height="45"/>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.1215686275" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="6vO-nb-cEE"/>
+                                            <constraint firstAttribute="height" constant="45" id="HZo-Dc-f5t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Show Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIy-7M-B9j">
+                                        <rect key="frame" x="132" y="397.5" width="150" height="45"/>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.1215686275" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="4Gr-5A-v29"/>
+                                            <constraint firstAttribute="height" constant="45" id="amg-VD-x5d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Show Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2h-s8-Jdn">
+                                        <rect key="frame" x="132" y="458.5" width="150" height="45"/>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.1215686275" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="pyz-0J-XUZ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="ypo-gb-Itw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Show Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.32156862745098036" green="0.79607843137254897" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="UIy-7M-B9j" firstAttribute="centerX" secondItem="WbL-O9-rXO" secondAttribute="centerX" id="BwO-hG-QQt"/>
+                                    <constraint firstItem="3b9-2y-1cH" firstAttribute="centerX" secondItem="WbL-O9-rXO" secondAttribute="centerX" id="G9K-fj-8PB"/>
+                                    <constraint firstItem="z2h-s8-Jdn" firstAttribute="centerX" secondItem="WbL-O9-rXO" secondAttribute="centerX" id="HoU-NQ-VRo"/>
+                                    <constraint firstItem="3b9-2y-1cH" firstAttribute="centerY" secondItem="WbL-O9-rXO" secondAttribute="centerY" id="Mjg-YG-ATe"/>
+                                    <constraint firstItem="1v0-zX-aOu" firstAttribute="top" secondItem="3b9-2y-1cH" secondAttribute="bottom" constant="16" id="Q5l-kq-iJ0"/>
+                                    <constraint firstItem="1v0-zX-aOu" firstAttribute="centerX" secondItem="WbL-O9-rXO" secondAttribute="centerX" id="Q7p-gu-imV"/>
+                                    <constraint firstItem="z2h-s8-Jdn" firstAttribute="top" secondItem="UIy-7M-B9j" secondAttribute="bottom" constant="16" id="t7J-OG-vFY"/>
+                                    <constraint firstItem="UIy-7M-B9j" firstAttribute="top" secondItem="1v0-zX-aOu" secondAttribute="bottom" constant="16" id="vxx-5y-VfP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WbL-O9-rXO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="965-Gf-axz"/>
+                            <constraint firstItem="rNx-QU-8tG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CQS-iZ-PAR"/>
+                            <constraint firstItem="rNx-QU-8tG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HcH-HB-AxK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WbL-O9-rXO" secondAttribute="trailing" id="L8c-wG-8Iw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rNx-QU-8tG" secondAttribute="trailing" id="NsM-VV-Cek"/>
+                            <constraint firstAttribute="bottom" secondItem="WbL-O9-rXO" secondAttribute="bottom" id="lBK-xa-ZNO"/>
+                            <constraint firstItem="WbL-O9-rXO" firstAttribute="top" secondItem="rNx-QU-8tG" secondAttribute="bottom" id="xdE-GS-X1A"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="showAlertButton" destination="3b9-2y-1cH" id="XF9-ct-lOh"/>
+                        <outlet property="showFourthAlertButton" destination="z2h-s8-Jdn" id="hpv-ye-T2g"/>
+                        <outlet property="showSecondAlertButton" destination="1v0-zX-aOu" id="Npt-v9-c1G"/>
+                        <outlet property="showThirdAlertButton" destination="UIy-7M-B9j" id="417-fD-hpF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="70.982142857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

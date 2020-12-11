@@ -13,6 +13,9 @@
 		8CA37A8B2583209D00A5A17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA37A892583209D00A5A17C /* Main.storyboard */; };
 		8CA37A8D2583209F00A5A17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA37A8C2583209F00A5A17C /* Assets.xcassets */; };
 		8CA37A902583209F00A5A17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA37A8E2583209F00A5A17C /* LaunchScreen.storyboard */; };
+		8CA37A9E2583284200A5A17C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA37A9D2583284200A5A17C /* BaseViewController.swift */; };
+		8CA37AA12583299100A5A17C /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA37AA02583299100A5A17C /* UIViewController+Extensions.swift */; };
+		8CA37AA425832CAE00A5A17C /* UIAlertWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA37AA325832CAE00A5A17C /* UIAlertWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		8CA37A8C2583209F00A5A17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CA37A8F2583209F00A5A17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CA37A912583209F00A5A17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CA37A9D2583284200A5A17C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8CA37AA02583299100A5A17C /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		8CA37AA325832CAE00A5A17C /* UIAlertWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				8CA37A8C2583209F00A5A17C /* Assets.xcassets */,
 				8CA37A8E2583209F00A5A17C /* LaunchScreen.storyboard */,
 				8CA37A912583209F00A5A17C /* Info.plist */,
+				8CA37A9D2583284200A5A17C /* BaseViewController.swift */,
+				8CA37AA02583299100A5A17C /* UIViewController+Extensions.swift */,
+				8CA37AA325832CAE00A5A17C /* UIAlertWrapper.swift */,
 			);
 			path = AlertDemo;
 			sourceTree = "<group>";
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CA37A882583209D00A5A17C /* ViewController.swift in Sources */,
+				8CA37A9E2583284200A5A17C /* BaseViewController.swift in Sources */,
+				8CA37AA425832CAE00A5A17C /* UIAlertWrapper.swift in Sources */,
+				8CA37AA12583299100A5A17C /* UIViewController+Extensions.swift in Sources */,
 				8CA37A842583209D00A5A17C /* AppDelegate.swift in Sources */,
 				8CA37A862583209D00A5A17C /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VHXHHCVH76;
 				INFOPLIST_FILE = AlertDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VHXHHCVH76;
 				INFOPLIST_FILE = AlertDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
